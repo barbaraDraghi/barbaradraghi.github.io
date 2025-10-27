@@ -15,26 +15,28 @@ This is the source code for Barbara Draghi's academic website, built for deploym
 
 ```
 barbaradraghi.github.io/
-├── _config.yml # Site-wide configuration (title, description, theme, etc.)
-├── _data/
-│ ├── navigation.yml # Defines items shown in the top navigation bar
-│ └── social.yml # (Optional) Social and contact links
-├── _includes/ # HTML partials (navbar, footer, head, etc.)
-├── _layouts/ # Layout templates (default, page, post, etc.)
-├── _pages/
-│ ├── about.md # "About" page
-│ ├── research.md # NEW: Research section
-│ ├── publications.md # NEW: Publications list
-│ ├── events-and-talks.md # NEW: Events & Talks section
-│ ├── coffee-and-learn.md # NEW: Coffee & Learn series
-│ ├── contact.md # NEW: Contact page
-│ └── (any existing pages)
-├── _posts/ # Blog/news posts (currently unused)
-├── assets/ # CSS, images, JS
-│ ├── css/
-│ ├── img/
-│ └── js/
-├── index.md # Homepage content
-└── README.md # This file
+├── _config.yml
+├── _data/nav.yml
+├── _includes/
+│   ├── head.html
+│   ├── header.html
+│   ├── nav.html
+│   └── footer.html
+├── _layouts/
+│   ├── default.html
+│   ├── home.html
+│   └── page.html
+├── assets/
+│   ├── css/style.css
+│   └── img/
+├── pages/
+│   ├── research.md
+│   ├── coffee-learn.md
+│   ├── events-talks.md
+│   ├── projects.md
+│   └── contact-cv.md
+├── index.md
+└── README.md
+
 
 ```
