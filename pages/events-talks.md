@@ -10,8 +10,8 @@ description: "Invited talks, panels, posters, and awards — with recordings, sl
   {% for e in items %}
   <article class="event-card">
     <div class="event-meta">
-      <span class="event-date">
-        {% if e.date %}{{ e.date | slice: 0, 10 }}{% endif %}
+      {% if e.date %}
+        <span class="event-date">{{ e.date | slice: 0, 10 }}</span>
       {% endif %}
       {% if e.role %}
         <span class="event-role">{{ e.role }}</span>
