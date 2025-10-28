@@ -1,0 +1,18 @@
+{% include head.html %}
+<body>
+  {% include header.html %}
+
+  <!-- === BACKGROUND WRAPPER === -->
+  <div class="main-background">
+    <!-- Replace with <video> later if you want -->
+    <div id="bg-image" style="background-image: url('{{ '/assets/img/bg.jpg' | relative_url }}');"></div>
+
+    <!-- === MAIN CONTENT (changes by page) === -->
+    <main class="main-container">
+      {{ content }}
+    </main>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>
