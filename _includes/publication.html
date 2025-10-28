@@ -1,0 +1,23 @@
+<div class="pub-card">
+  <h3>{{ include.title }}</h3>
+  <p class="pub-authors">{{ include.authors }}</p>
+  <p class="pub-journal">{{ include.journal }}</p>
+
+  <div class="pub-buttons">
+    {% if include.abstract %}
+      <a href="#{{ include.title | slugify }}" class="btn-abstract" onclick="toggleAbstract('{{ include.title | slugify }}'); return false;">Abstract</a>
+    {% endif %}
+    {% if include.doi %}
+      <a href="{{ include.doi }}" target="_blank" class="btn-doi">DOI</a>
+    {% endif %}
+    {% if include.pdf %}
+      <a href="{{ include.pdf }}" target="_blank" class="btn-doi">PDF</a>
+    {% endif %}
+  </div>
+
+  {% if include.abstract %}
+    <p id="{{ include.title | slugify }}" class="abstract hidden">
+      {{ include.abstract }}
+    </p>
+  {% endif %}
+</div>
