@@ -2,40 +2,32 @@
 :root {
   --font-main: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   --font-accent: 'Merriweather', serif;
+
+  /* Accent palette */
   --accent: #009688;
   --accent-dark: #00796b;
   --accent-light: #4db6ac;
+  --glow: rgba(0, 150, 136, 0.25);
+
+  /* === DEFAULT: DARK THEME === */
   --bg: #0d1117;
   --text: #f2f2f2;
   --muted: #999;
-  --panel: rgba(20, 20, 20, 0.7);
-  --glow: rgba(0, 150, 136, 0.25);
+  --panel: rgba(25, 25, 25, 0.7);
+  --border: rgba(255, 255, 255, 0.1);
+  --shadow: rgba(255, 255, 255, 0.05);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: var(--font-main);
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* === LIGHT THEME === */
+/* === LIGHT THEME (White Glass Mode) === */
 [data-theme="light"] {
   --bg: #ffffff;
   --text: #1a1a1a;
   --muted: #666;
-  --panel: rgba(255, 255, 255, 0.7);
-  --accent: #009688;
-  --accent-dark: #00796b;
-  --accent-light: #4db6ac;
+  --panel: rgba(255, 255, 255, 0.75);   /* Frosted white look */
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: rgba(0, 0, 0, 0.12);
   --glow: rgba(0, 150, 136, 0.15);
 }
-
 
 /* === HEADER & NAV === */
 .navbar {
