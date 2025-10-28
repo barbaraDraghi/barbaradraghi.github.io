@@ -122,8 +122,44 @@ body {
   margin-bottom: 1.5rem;
   color: var(--text);
 }
-.hero-img { flex: 0 0 260px; text-align: center; }
-.hero-img img {
+
+
+.intro {
+  flex: 1 1 55%;
+}
+
+.intro-text p {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-contact {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-contact:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.portrait {
+  flex: 0 0 260px;
+  text-align: center;
+}
+
+.portrait img {
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -132,7 +168,10 @@ body {
   box-shadow: 0 0 20px var(--glow);
   transition: transform 0.3s ease;
 }
-.hero-img img:hover { transform: translateY(-4px) scale(1.03); }
+
+.portrait img:hover {
+  transform: translateY(-4px) scale(1.03);
+}
 
 
 
