@@ -1,0 +1,16 @@
+title: "Barbara Draghi"
+description: "Research • Projects • Coffee & Learn"
+url: "https://barbaradraghi.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
