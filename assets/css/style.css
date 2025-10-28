@@ -24,6 +24,19 @@ body {
   padding: 2rem;
 }
 
+/* === LIGHT THEME === */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666;
+  --panel: rgba(255, 255, 255, 0.7);
+  --accent: #009688;
+  --accent-dark: #00796b;
+  --accent-light: #4db6ac;
+  --glow: rgba(0, 150, 136, 0.15);
+}
+
+
 /* === HEADER & NAV === */
 .navbar {
   display: flex;
@@ -59,6 +72,24 @@ body {
 }
 .nav-right a:hover::after,
 .nav-right a.active::after { width: 100%; }
+
+
+/* === THEME TOGGLE BUTTON === */
+#theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--text);
+  transition: transform 0.2s ease, color 0.2s ease;
+  margin-left: 1rem;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.15);
+  color: var(--accent);
+}
+
 
 /* === HERO === */
 .hero {
@@ -102,6 +133,11 @@ body {
   transition: transform 0.3s ease;
 }
 .hero-img img:hover { transform: translateY(-4px) scale(1.03); }
+
+
+
+
+
 
 /* === CARDS GRID === */
 .cards-grid {
