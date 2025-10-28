@@ -4,15 +4,17 @@ layout: default
 
 <!-- === HERO SECTION === -->
 <section class="hero">
-  <div class="hero-text">
-    <h1>Hi, I’m {{ site.title }}.</h1>
-    <h2>Data Scientist • Researcher • Digital Health</h2>
-    <p>Exploring Bayesian networks, synthetic data, and fairness in clinical AI.</p>
-    <a href="{{ '/pages/research/' | relative_url }}" class="btn">Explore my work →</a>
-  </div>
+    <div class="intro">
+    <div class="intro-text">
+      {{ content }}
+    </div>
 
-  <div class="hero-img">
-    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Barbara Draghi portrait" />
+    <div class="contact-buttons">
+      <a href="https://scholar.google.com/citations?user=dlEjWzwAAAAJ&hl=it" target="_blank" class="btn-contact">Google Scholar</a>
+      <a href="https://linkedin.com/in/barbaradraghi" target="_blank" class="btn-contact">LinkedIn</a>
+      <a href="https://github.com/barbaraDraghi" target="_blank" class="btn-contact">GitHub</a>
+      <a href="mailto:barbara.draghi@brunel.ac.uk" class="btn-contact">Email</a>
+    </div>
   </div>
 </section>
 
