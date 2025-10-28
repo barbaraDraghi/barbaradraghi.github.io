@@ -92,7 +92,7 @@
   gap: 3rem;
   padding: 3rem 2rem;
   border-radius: 1rem;
-  background: rgba(20,20,20,0.6);
+  background: var(--panel);
   backdrop-filter: blur(12px);
   box-shadow: 0 6px 20px var(--glow);
   margin: 3rem 0;
