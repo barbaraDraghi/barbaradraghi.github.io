@@ -30,13 +30,13 @@
 
 /* === LIGHT MODE === */
 [data-theme="light"] {
-  --color-bg: #ffffff;
-  --color-text: #1a1a1a;
-  --color-muted: #666;
-  --color-border: rgba(0,0,0,0.08);
-  --color-panel: rgba(255,255,255,0.75);
-  --color-shadow: rgba(0,0,0,0.12);
-  --color-bg-rgb: 255,255,255;
+  --color-bg: #fdfdfd;                 /* overall page background */
+  --color-text: #1a1a1a;               /* main text */
+  --color-muted: #666;                 /* secondary text */
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-shadow: rgba(0, 0, 0, 0.08);
+  --color-panel: rgba(255, 255, 255, 0.9); /* bright translucent white */
+  --color-bg-rgb: 255, 255, 255;
   --petrol-glow: rgba(0, 150, 136, 0.15);
 }
 
@@ -410,4 +410,63 @@ footer a { color: var(--petrol-base); }
   .intro { text-align: center; }
   .portrait img { width: 220px; height: 220px; }
   .glass-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================
+   LIGHT MODE REFINEMENTS
+   ========================================================== */
+
+/* Navbar — light version */
+[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .nav-left a,
+[data-theme="light"] .nav-right a,
+[data-theme="light"] #theme-toggle {
+  color: #1a1a1a;
+}
+
+/* Hero + Cards — white frosted panels */
+[data-theme="light"] .hero,
+[data-theme="light"] .link-card,
+[data-theme="light"] .pub-card,
+[data-theme="light"] .event-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  color: #1a1a1a;
+}
+
+/* Buttons stay turquoise on white */
+[data-theme="light"] .btn-contact {
+  background-color: var(--petrol-base);
+  color: #fff !important;
+}
+[data-theme="light"] .btn-contact:hover {
+  background-color: var(--petrol-dark);
+}
+
+/* Research / Event tags and links */
+[data-theme="light"] .tag {
+  background: var(--petrol-light);
+  color: #fff;
+}
+[data-theme="light"] .event-link {
+  border-color: var(--petrol-base);
+  color: var(--petrol-base);
+}
+[data-theme="light"] .event-link:hover {
+  background: var(--petrol-base);
+  color: #fff;
+}
+
+/* Footer — soft white tint */
+[data-theme="light"] footer {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-muted);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.04);
 }
