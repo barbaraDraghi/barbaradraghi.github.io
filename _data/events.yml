@@ -1,0 +1,99 @@
+# Events & Talks — data source
+# Add new entries at the top to keep newest first.
+# Supported fields:
+# - title: Short, punchy title for the card
+# - role: e.g., Invited Speaker, Panelist, Presenter, Award, Nominee
+# - event: Event / venue name
+# - date: monht YYYY (used for ordering & display)
+# - location: City, Country (optional)
+# - description: One-sentence summary (optional)
+# - image: path or URL to a thumbnail/poster (optional)
+# - tags: [Fairness, Synthetic Data, Award, ...] (optional)
+# - links: list of {text, url}
+#
+# Tip: For items without materials yet, leave the link out or set url to "#".
+
+- title: "Bias in Medical AI: Identifying Risks and Ensuring Fairness"
+  role: "Invited Speaker"
+  event: "2nd ENFIELD Webinar"
+  date: "May 2025"
+  location: "Online"
+  description: "Invited webinar on bias and fairness in medical AI."
+  tags: ["Fairness", "Medical AI", "Webinar"]
+  links:
+    - text: "Recording"
+      url: "https://aimas.cs.pub.ro/2ndenfieldwebinar/#recording"
+    - text: "Slides"
+      url: "https://aimas.cs.pub.ro/2ndenfieldwebinar/assets/presentations/DetectAndMitigateBiasInPatientDataUsingSyntheticDataGenerators.pdf"
+
+- title: "Bias-aware synthetic data generation"
+  role: "Presenter"
+  event: "BIAS 2024 Workshop @ ECML"
+  date: "September 2024"
+  location: "Italy"
+  description: "Talk and poster at BIAS2024 workshop."
+  tags: ["Workshop", "Fairness", "Synthetic Data"]
+  links:
+    - text: "Post (LinkedIn)"
+      url: "https://www.linkedin.com/feed/update/urn:li:activity:7239284909813456896/"
+    - text: "Slides (coming soon)"
+      url: "#"
+
+- title: "Fairness in Synthetic Data"
+  role: "Panelist"
+  event: "HL7 FHIR Synthetic Data Event"
+  date: "August 2023"
+  location: "International (Online)"
+  description: "Panel discussion on fairness considerations for synthetic health data."
+  tags: ["Panel", "Synthetic Data", "Fairness"]
+  links:
+    - text: "YouTube"
+      url: "https://www.youtube.com/watch?v=YpzPCGlm78I&list=PL4DUfomz2RZybaDPN0YWjx2RuFoa7rKcU&index=4"
+
+- title: "Public Sector Awards — Excellence in Central Government"
+  role: "Nominee"
+  event: "Alliance PSAwards"
+  date: "July 2023"
+  location: "UK"
+  description: "Nominated for research on bias detection & correction in MHRA primary care data."
+  tags: ["Award", "Nomination", "Public Sector"]
+  links:
+    - text: "LinkedIn"
+      url: "https://www.linkedin.com/posts/barbaradraghi_aiinmedicine-healthcareinnovation-alliancepsawards-activity-7084069961286991872-KGTn"
+
+- title: "Best Presentation Award"
+  role: "Winner"
+  event: "CSBPS 2023 — Computer Science Brunel PhD Symposium"
+  date: "April 2023"
+  location: "Brunel University London, UK"
+  description: "Winner of the best presentation award."
+  tags: ["Award", "Presentation"]
+  links:
+    - text: "Slides (coming soon)"
+      url: "#"
+
+- title: "Identifying and handling data bias within primary healthcare and clinical trials"
+  role: "Poster Presenter"
+  event: "AIME 2023 — 21st International Conference on Artificial Intelligence in Medicine"
+  date: "June 2023"
+  location: "Portorož, Slovenia"
+  description: "Poster presentation at AIME 2023."
+  tags: ["Poster", "Bias", "Healthcare"]
+  links:
+    - text: "Poster (LinkedIn)"
+      url: "https://www.linkedin.com/feed/update/urn:li:activity:7075004805194096640/"
+    - text: "Poster (coming soon)"
+      url: "#"
+
+
+- title: "LIDTA 2021 Workshop Presentation"
+  role: "Presenter"
+  event: "LIDTA 2021"
+  date: "2021"
+  location: ""
+  description: "Workshop presentation (materials to be added)."
+  tags: ["Workshop"]
+  links:
+    - text: "Slides (coming soon)"
+      url: "#"
+
