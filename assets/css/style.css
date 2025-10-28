@@ -216,32 +216,80 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0 3rem;
+  margin: 2.5rem auto 3rem auto;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 2rem;
 }
 
-.link-card {
+/* --- Unified Glass Card --- */
+.link-card.glass {
   background: var(--color-panel);
   border: 1px solid var(--color-border);
   border-radius: 1rem;
   padding: 1.8rem;
   box-shadow: 0 6px 18px var(--petrol-glow);
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.link-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px var(--petrol-glow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  text-align: left;
 }
 
-.link-card h3 {
-  color: var(--petrol-base);
-  font-family: var(--font-accent);
-  margin-bottom: 0.5rem;
+.link-card.glass:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px var(--petrol-glow);
+  border-color: var(--petrol-base);
 }
-.link-card p {
-  color: var(--color-text);
+
+/* Headings */
+.link-card.glass h3 {
+  font-family: var(--font-accent);
+  color: var(--petrol-base);
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Descriptions */
+.link-card.glass p {
   font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.6;
   margin-bottom: 1rem;
+}
+
+/* Inline link (“Learn more →”) */
+.link-card.glass a {
+  color: var(--petrol-base);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.link-card.glass a:hover {
+  border-bottom: 1px solid var(--petrol-base);
+}
+
+/* === LIGHT THEME version === */
+[data-theme="light"] .link-card.glass {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+[data-theme="light"] .link-card.glass:hover {
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive layout */
+@media (max-width: 950px) {
+  .glass-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .glass-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ==========================================================
