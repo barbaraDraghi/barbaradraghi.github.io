@@ -1,14 +1,23 @@
-# Barbara Draghi - Academic Website
-This is the source code for Barbara Draghi's academic website, built for deployment on GitHub Pages.
+# Barbara Draghi - Personal Academic Website
+This is the source code for Barbara Draghi's academic website, built for deployment on GitHub Pages.  
+It features a clean modular _Jekyll_ rebuild with a dark glass aesthetic.
 
-## 🚀 Quick Start
-1. Upload to GitHub
-   - Create a repository named barbaradraghi.github.io
-   - Upload all files to the repository
-   - Enable GitHub Pages in repository settings
 
-2. Access your website:
-   - Your site will be available at https://barbaradraghi.github.io
+## 🧩 Folder Overview
+   - _includes/ → reusable components (head, header, nav, footer)
+   - _layouts/ → page templates for home and inner pages
+   - /assets/css/style.css → glassmorphic theme stylesheet
+   - /pages/ → markdown content pages (Research, Projects, etc.)
+
+## 🌐 Access your website:
+   - Once deployed, the website will be available at:  https://barbaradraghi.github.io
+
+To run locally:
+```bash
+bundle install
+bundle exec jekyll serve
+```
+Then open your browser at http://127.0.0.1:4000
 
 
 ## 📁 Project Structure
