@@ -44,9 +44,9 @@ barbaradraghi.github.io/
 ├── assets/
 │   ├── css/
 │   │   └── style.css            # Unified dark/light mode CSS
-│   ├── img/                     # Images (profile, covers, icons, etc.)
+│   ├── images                   # Images (profile, covers, icons, etc.)
+│   │   └── profile.jpg          
 │   ├── video/                   # Background/hero videos (optional)
-│   └── js/                      # Scripts for interactivity (optional)
 │
 ├── pages/                       # Individual content pages
 │   ├── research.md
