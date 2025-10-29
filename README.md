@@ -25,27 +25,40 @@ Then open your browser at http://127.0.0.1:4000
 ```
 barbaradraghi.github.io/
 ├── _config.yml
-├── _data/nav.yml
-├── _includes/
-│   ├── head.html
-│   ├── header.html
-│   ├── nav.html
-│   └── footer.html
-├── _layouts/
-│   ├── default.html
-│   ├── home.html
-│   └── page.html
+│
+├── _data/
+│   ├── nav.yml                  # Navigation menu entries (title + link)
+│   └── events.yml               # List of events, talks, awards, posters, etc.
+│
+├── _includes/                   # Reusable partials
+│   ├── head.html                # <head> metadata, CSS, fonts, favicon
+│   ├── header.html              # Site header (name, logo)
+│   ├── nav.html                 # Navbar built from nav.yml
+│   └── footer.html              # Footer section (contact info, social icons)
+│
+├── _layouts/                    # HTML layouts
+│   ├── default.html             # Base layout with includes
+│   ├── home.html                # Homepage template
+│   └── page.html                # Generic page layout (for research, contact, etc.)
+│
 ├── assets/
-│   ├── css/style.css
-│   └── img/
-├── pages/
+│   ├── css/
+│   │   └── style.css            # Unified dark/light mode CSS
+│   ├── img/                     # Images (profile, covers, icons, etc.)
+│   ├── video/                   # Background/hero videos (optional)
+│   └── js/                      # Scripts for interactivity (optional)
+│
+├── pages/                       # Individual content pages
 │   ├── research.md
-│   ├── coffee-learn.md
-│   ├── events-talks.md
 │   ├── projects.md
+│   ├── events-talks.md
+│   ├── coffee-learn.md
 │   └── contact-cv.md
-├── index.md
-└── README.md
+│
+├── index.md                     # Homepage (uses layout: home)
+├── README.md                    # Repository info & setup instructions
+└── .gitignore                   # Ignore build files (_site/, cache, etc.)
 
+```
 
 ```
