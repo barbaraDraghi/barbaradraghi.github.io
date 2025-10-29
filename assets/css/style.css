@@ -459,7 +459,7 @@ footer a { color: var(--petrol-base); }
   .hero { flex-direction: column; text-align: center; }
   .intro { text-align: center; }
   .portrait img { width: 220px; height: 220px; }
-  .glass-grid { grid-template-columns: 1fr; }
+  .cards-grid { grid-template-columns: 1fr; }
 }
 
 /* ==========================================================
@@ -481,7 +481,7 @@ footer a { color: var(--petrol-base); }
 
 /* Hero + Cards — white frosted panels */
 [data-theme="light"] .hero,
-[data-theme="light"] .link-card,
+[data-theme="light"] .card,
 [data-theme="light"] .pub-card,
 [data-theme="light"] .event-card {
   background: rgba(255, 255, 255, 0.95);
