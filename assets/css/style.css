@@ -212,7 +212,8 @@ h1, h2, h3, h4 {
 /* ==========================================================
    QUICK LINKS GRID
    ========================================================== */
-.glass-grid {
+
+.cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
@@ -222,8 +223,8 @@ h1, h2, h3, h4 {
   padding: 0 2rem;
 }
 
-/* --- Unified Glass Card --- */
-.link-card.glass {
+/* --- Unified Card Style --- */
+.card {
   background: var(--color-panel);
   border: 1px solid var(--color-border);
   border-radius: 1rem;
@@ -235,14 +236,14 @@ h1, h2, h3, h4 {
   text-align: left;
 }
 
-.link-card.glass:hover {
+.card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px var(--petrol-glow);
   border-color: var(--petrol-base);
 }
 
 /* Headings */
-.link-card.glass h3 {
+.card h3 {
   font-family: var(--font-accent);
   color: var(--petrol-base);
   font-size: 1.2rem;
@@ -250,7 +251,7 @@ h1, h2, h3, h4 {
 }
 
 /* Descriptions */
-.link-card.glass p {
+.card p {
   font-size: 0.95rem;
   color: var(--color-text);
   line-height: 1.6;
@@ -258,39 +259,40 @@ h1, h2, h3, h4 {
 }
 
 /* Inline link (“Learn more →”) */
-.link-card.glass a {
+.card a {
   color: var(--petrol-base);
   font-weight: 500;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.2s ease;
 }
-.link-card.glass a:hover {
+.card a:hover {
   border-bottom: 1px solid var(--petrol-base);
 }
 
 /* === LIGHT THEME version === */
-[data-theme="light"] .link-card.glass {
+[data-theme="light"] .card {
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
-[data-theme="light"] .link-card.glass:hover {
+[data-theme="light"] .card:hover {
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.9);
 }
 
 /* Responsive layout */
 @media (max-width: 950px) {
-  .glass-grid {
+  .cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 600px) {
-  .glass-grid {
+  .cards-grid {
     grid-template-columns: 1fr;
   }
 }
+
 
 /* ==========================================================
    PUBLICATIONS SECTION
