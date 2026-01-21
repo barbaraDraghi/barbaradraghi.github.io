@@ -1,10 +1,7 @@
 <header class="navbar">
-  <div class="nav-left">
-    <a href="{{ '/' | relative_url }}" class="nav-title">{{ site.title }}</a>
+  <div class="nav-wrapper">
+    {% include nav.html %}
+    <!-- === Theme Toggle Button === -->
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
   </div>
-  {% include nav.html %}
-
-   <!-- === Theme Toggle Button === -->
-  <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
-  
 </header>

@@ -4,6 +4,7 @@ url: "https://barbaradraghi.github.io"
 baseurl: ""
 markdown: kramdown
 permalink: pretty
+theme: null
 
 plugins:
   - jekyll-seo-tag
