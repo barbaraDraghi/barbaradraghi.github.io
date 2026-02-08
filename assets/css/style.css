@@ -609,9 +609,11 @@ h3 {
 .event-meta {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   font-size: 0.85rem;
   color: var(--color-muted);
   margin-bottom: 0.4rem;
+  flex-wrap: wrap;
 }
 .event-title {
   color: var(--navy-blue);

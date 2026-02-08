@@ -24,7 +24,7 @@ description: "Peer-reviewed research papers and collaborations."
   {% include publication.html
      title="Bias-aware Synthetic Data Generation: A Tailored Use-Case Driven Approach"
      authors="Barbara Draghi, Puja Myles, Allan Tucker"
-     journal="Proceedings of the Workshop on Bias and Fairness in AI, 2024"
+     journal="Proceedings of the Workshop on Bias and Fairness in AI, September 2024"
      pdf="https://drive.google.com/file/d/1ro7EKzs9Znp21t5RAC8fH6Jmr7nzW4Fz/view"
      abstract="The terms bias and fairness are often mistakenly used interchangeably in discussions about AI systems..."
   %}

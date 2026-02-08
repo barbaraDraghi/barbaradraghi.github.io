@@ -11,7 +11,7 @@ description: "Invited talks, panels, posters, and awards — with recordings, sl
   <article class="event-card">
     <div class="event-meta">
       {% if e.date %}
-        <span class="event-date">{{ e.date | slice: 0, 10 }}</span>
+        <span class="event-date">{{ e.date }}</span>
       {% endif %}
       {% if e.role %}
         <span class="event-role">{{ e.role }}</span>
