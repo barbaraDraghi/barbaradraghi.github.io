@@ -4,9 +4,8 @@ title: "Barbara Draghi"
 ---
 
 # Barbara Draghi  
-*AI Researcher in Digital Health*
+*Machine Learning Expert in Digital Health*
 
-I work at the intersection of **data science**, **synthetic data generation**, and **healthcare equity**.  
-Currently, I work with the **Clinical Practice Research Datalink (CPRD)** and pursue a PhD at the **Brunel University London**, focusing on **Bayesian Network models for bias-aware synthetic data**.
+I'm a Machine Learning Expert at MHRA/CPRD, where I've spent the past five years working on synthetic data solutions for real-world healthcare data. Alongside this, I'm pursuing a PhD in machine learning, with research centred on how synthetic data can reduce bias and support more inclusive clinical research.
 
-My work aims to make healthcare data **more accessible, representative, and fair**, supporting trustworthy AI for the public good.
+My work focuses on making healthcare data more accessible and representative, supporting trustworthy AI for the public good.
