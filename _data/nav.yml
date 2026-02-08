@@ -6,7 +6,7 @@
   url: /pages/coffee-learn/
 - title: Events & Talks
   url: /pages/events-talks/
-- title: Projects
-  url: /pages/projects/
+# - title: Projects
+#   url: /pages/projects/
 - title: Contact & CV
   url: /pages/contact-cv/
