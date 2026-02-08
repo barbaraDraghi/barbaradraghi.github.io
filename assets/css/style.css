@@ -47,15 +47,15 @@
   --accent-glow: rgba(204, 51, 153, 0.25);
 }
 
-/* === DARK MODE === */
+/* === DARK MODE (Navy Mode) === */
 [data-theme="dark"] {
-  /* Darker blues for dark mode */
+  /* Navy background theme */
   --primary-blue: #3A7BC8;
   --primary-blue-dark: #2D5F9E;
   --primary-blue-light: #5294D1;
-  --navy-blue: #64B5F6;
+  --navy-blue: #1A365D;
   
-  /* Keep bold magenta for dark backgrounds */
+  /* Same magenta as light mode */
   --accent-magenta: #CC3399;
   --accent-magenta-dark: #A3297A;
   --accent-magenta-light: #D966B8;
@@ -66,16 +66,16 @@
   --blue-deep: #1E88E5;
   --blue-pale: #0D47A1;
   
-  /* Dark Mode Colors */
-  --color-bg: #0d1117;
-  --color-text: #E8EAED;
-  --color-muted: #90A4AE;
-  --color-border: rgba(74, 144, 226, 0.2);
-  --color-panel: #1C2128;
+  /* Navy Mode Colors - dark navy backgrounds */
+  --color-bg: #0D1B2A;
+  --color-text: #FFFFFF;
+  --color-muted: #B8D4F1;
+  --color-border: rgba(100, 181, 246, 0.2);
+  --color-panel: #1A2841;
   --color-shadow: rgba(0, 0, 0, 0.5);
-  --color-bg-rgb: 13, 17, 23;
-  --primary-glow: rgba(74, 144, 226, 0.3);
-  --accent-glow: rgba(204, 51, 153, 0.3);
+  --color-bg-rgb: 13, 27, 42;
+  --primary-glow: rgba(100, 181, 246, 0.4);
+  --accent-glow: rgba(204, 51, 153, 0.4);
 }
 
 /* ==========================================================
@@ -451,7 +451,7 @@ h3 {
 }
 [data-theme="dark"] .card:hover {
   box-shadow: 0 8px 24px var(--accent-glow);
-  background: #21262d;
+  background: #243A56;
   border-color: var(--accent-magenta);
 }
 
@@ -713,11 +713,24 @@ footer a:hover { color: var(--accent-magenta); }
 
 /* Navbar — dark version */
 [data-theme="dark"] .navbar {
-  background: rgba(13, 17, 23, 0.98);
+  background: rgba(13, 27, 42, 0.98);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--color-border);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .nav-left a,
+[data-theme="dark"] .nav-right a {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .nav-right a:hover {
+  color: var(--accent-magenta);
+}
+
+[data-theme="dark"] #theme-toggle {
+  color: #FFFFFF;
 }
 
 [data-theme="light"] .nav-left a,
@@ -750,6 +763,26 @@ footer a:hover { color: var(--accent-magenta); }
   color: var(--color-text);
 }
 
+/* Dark mode - override navy text to white */
+[data-theme="dark"] .card h3,
+[data-theme="dark"] .pub-card h3,
+[data-theme="dark"] .event-title,
+[data-theme="dark"] .intro h2 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .card a,
+[data-theme="dark"] .event-link {
+  color: var(--blue-soft);
+  border-color: var(--blue-soft);
+}
+
+[data-theme="dark"] .card a:hover,
+[data-theme="dark"] .event-link:hover {
+  color: var(--accent-magenta);
+  border-color: var(--accent-magenta);
+}
+
 /* Buttons stay bold and clean */
 [data-theme="light"] .btn-contact {
   background: var(--navy-blue);
@@ -758,6 +791,19 @@ footer a:hover { color: var(--accent-magenta); }
 }
 [data-theme="light"] .btn-contact:hover {
   background: var(--accent-magenta);
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+/* Dark mode buttons */
+[data-theme="dark"] .btn-contact {
+  background: #1A365D;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(26, 54, 93, 0.6);
+  border: 1px solid rgba(100, 181, 246, 0.3);
+}
+[data-theme="dark"] .btn-contact:hover {
+  background: var(--accent-magenta);
+  color: #FFFFFF !important;
   box-shadow: 0 6px 20px var(--accent-glow);
 }
 
