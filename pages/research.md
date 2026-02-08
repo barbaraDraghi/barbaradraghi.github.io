@@ -5,8 +5,6 @@ permalink: /pages/research/
 description: "Peer-reviewed research papers and collaborations."
 ---
 <section class="pub-section">
-  <h2>Lead Publications</h2>
-
   {% include publication.html
      title="Bayesboost: Identifying and Handling Bias Using Synthetic Data Generators"
      authors="Barbara Draghi, Zhenchen Wang, Puja Myles, Allan Tucker"
@@ -33,7 +31,7 @@ description: "Peer-reviewed research papers and collaborations."
 </section>
 
 <section class="pub-section">
-  <h2>Collaborations</h2>
+  <h1 class="page-title">Collaborations</h1>
 
   {% include publication.html
      title="High-Fidelity Synthetic Data Applications for Data Augmentation"

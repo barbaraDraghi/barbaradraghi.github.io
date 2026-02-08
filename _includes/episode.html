@@ -1,0 +1,12 @@
+<div class="pub-card episode-card">
+  <h3>{{ include.title }}</h3>
+  <p class="episode-description">{{ include.description }}</p>
+
+  <div class="pub-buttons">
+    {% if include.video %}
+      <a href="{{ include.video }}" target="_blank" class="btn-video">Watch Video</a>
+    {% elsif include.coming_soon %}
+      <span class="btn-coming-soon">Coming Soon...</span>
+    {% endif %}
+  </div>
+</div>
