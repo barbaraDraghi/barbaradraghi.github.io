@@ -308,18 +308,26 @@ h3 {
 .portrait {
   flex: 1 1 35%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portrait-wrapper {
+  padding: 4px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, var(--navy-blue), var(--accent-magenta));
+  transition: transform 0.4s ease;
+  display: inline-block;
+}
+.portrait-wrapper:hover {
+  transform: translateY(-6px) scale(1.03);
 }
 .portrait img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid var(--accent-magenta);
-  box-shadow: 0 12px 40px var(--accent-glow), 0 0 0 1px rgba(255,255,255,0.8);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-.portrait img:hover {
-  transform: translateY(-6px) scale(1.03);
+  display: block;
 }
 
 /* ==========================================================
