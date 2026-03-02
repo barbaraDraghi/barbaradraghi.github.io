@@ -260,6 +260,89 @@ h3 {
 }
 
 /* ==========================================================
+   MOBILE RESPONSIVE - Navbar
+   ========================================================== */
+/* Tablet and smaller */
+@media (max-width: 768px) {
+  .navbar {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 0.8rem 0;
+  }
+
+  .nav-wrapper {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .nav-right {
+    gap: 1.5rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .nav-right a {
+    font-size: 0.95rem;
+    padding: 0.3rem 0;
+  }
+
+  #theme-toggle {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.6rem 0;
+  }
+
+  .nav-wrapper {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nav-right {
+    gap: 1rem;
+    width: 100%;
+    order: 2;
+    margin-top: 0.5rem;
+  }
+
+  .nav-right a {
+    font-size: 0.85rem;
+    padding: 0.25rem 0;
+  }
+
+  #theme-toggle {
+    font-size: 0.9rem;
+    order: 1;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .nav-right {
+    gap: 0.7rem;
+  }
+
+  .nav-right a {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .nav-wrapper {
+    padding: 0 0.75rem;
+  }
+}
+
+/* ==========================================================
    HERO
    ========================================================== */
 .hero {
@@ -471,10 +554,141 @@ h3 {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .hero {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .intro {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 2.8rem;
+  }
+
+  .intro h2 {
+    font-size: 1.15rem;
+  }
+
+  .portrait {
+    flex: 1 1 100%;
+  }
+
+  .portrait img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .btn-contact {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
 }
 @media (max-width: 600px) {
   .cards-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.75rem;
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .intro h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  .portrait-wrapper {
+    padding: 2px;
+  }
+
+  .portrait img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .btn-contact {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 0.75rem 1.2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .card h3 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro h2 {
+    font-size: 0.9rem;
+  }
+
+  .intro p {
+    font-size: 0.9rem;
+  }
+
+  .portrait img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-buttons {
+    gap: 0.5rem;
+  }
+
+  .btn-contact {
+    font-size: 0.8rem;
+    padding: 0.7rem 1rem;
   }
 }
 
@@ -711,6 +925,42 @@ footer a:hover { color: var(--accent-magenta); }
   .intro { text-align: center; }
   .portrait img { width: 220px; height: 220px; }
   .cards-grid { grid-template-columns: 1fr; }
+  
+  footer {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.5rem 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.2rem 1.5rem;
+    width: 100%;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 1rem 1rem;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  footer p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 0.8rem 0.75rem;
+    font-size: 0.75rem;
+  }
 }
 
 /* ==========================================================
