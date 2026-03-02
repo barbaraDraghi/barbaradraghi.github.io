@@ -1,64 +1,88 @@
-# Barbara Draghi - Personal Academic Website
-This is the source code for Barbara Draghi's academic website, built for deployment on GitHub Pages.  
-It features a clean modular _Jekyll_ rebuild with a dark glass aesthetic.
+# Barbara Draghi — Personal Academic Website
 
+Source code for [https://barbaradraghi.github.io](https://barbaradraghi.github.io), built with Jekyll and deployed on GitHub Pages.
 
-## 🧩 Folder Overview
-   - _includes/ → reusable components (head, header, nav, footer)
-   - _layouts/ → page templates for home and inner pages
-   - /assets/css/style.css → glassmorphic theme stylesheet
-   - /pages/ → markdown content pages (Research, Projects, etc.)
+## Overview
 
-## 🌐 Access your website:
-   - Once deployed, the website will be available at:  https://barbaradraghi.github.io
+This website includes:
 
-To run locally:
+- A custom Jekyll setup (`theme: null`) with reusable layouts/includes
+- A homepage with intro, contact buttons, portrait, and section cards
+- Dedicated pages for:
+  - Research publications and collaborations
+  - Coffee & Learn video episodes
+  - Events & Talks (data-driven from YAML)
+  - Contact & CV
+- Light/dark theme toggle with `localStorage` persistence
+
+## Live Site
+
+- [https://barbaradraghi.github.io](https://barbaradraghi.github.io)
+
+## Run Locally
+
+Prerequisites:
+
+- Ruby + Bundler installed
+
+Commands:
+
 ```bash
 bundle install
 bundle exec jekyll serve
 ```
-Then open your browser at http://127.0.0.1:4000
 
+Open:
 
-## 📁 Project Structure
+- `http://127.0.0.1:4000`
 
-```
+## Content & Navigation
+
+- Main navigation is configured in `_data/nav.yml`
+- Events & Talks entries are managed in `_data/events.yml`
+- Main content pages live in `pages/`
+- Homepage content lives in `index.md`
+
+## Project Structure
+
+```text
 barbaradraghi.github.io/
 ├── _config.yml
-│
+├── Gemfile
+├── index.md
+├── README.md
 ├── _data/
-│   ├── nav.yml                  # Navigation menu entries (title + link)
-│   └── events.yml               # List of events, talks, awards, posters, etc.
-│
-├── _includes/                   # Reusable partials
-│   ├── head.html                # <head> metadata, CSS, fonts, favicon
-│   ├── header.html              # Site header (name, logo)
-│   ├── nav.html                 # Navbar built from nav.yml
-│   └── footer.html              # Footer section (contact info, social icons)
-│
-├── _layouts/                    # HTML layouts
-│   ├── default.html             # Base layout with includes
-│   ├── home.html                # Homepage template
-│   └── page.html                # Generic page layout (for research, contact, etc.)
-│
+│   ├── events.yml
+│   └── nav.yml
+├── _includes/
+│   ├── episode.html
+│   ├── footer.html
+│   ├── head.html
+│   ├── header.html
+│   ├── nav.html
+│   └── publication.html
+├── _layouts/
+│   ├── default.html
+│   ├── home.html
+│   └── page.html
 ├── assets/
+│   ├── Barbara Draghi_CV.pdf
 │   ├── css/
-│   │   └── style.css            # Unified dark/light mode CSS
-│   ├── images                   # Images (profile, covers, icons, etc.)
-│   │   └── profile.png          
-│   ├── video/                   # Background/hero videos (optional)
-│
-├── pages/                       # Individual content pages
-│   ├── research.md
-│   ├── projects.md
-│   ├── events-talks.md
+│   │   └── style.css
+│   └── images/
+│       ├── bg.webp
+│       ├── profile.jpg
+│       └── profile.png
+├── pages/
 │   ├── coffee-learn.md
-│   └── contact-cv.md
-│
-├── index.md                     # Homepage (uses layout: home)
-├── README.md                    # Repository info & setup instructions
-└── .gitignore                   # Ignore build files (_site/, cache, etc.)
-
+│   ├── contact-cv.md
+│   ├── events-talks.md
+│   ├── projects.md
+│   └── research.md
+└── _site/                       # generated build output
 ```
 
-```
+## Notes
+
+- `pages/projects.md` exists but is currently not shown in the nav menu.
+- The site uses `jekyll-seo-tag` via the `github-pages` gem dependency.
