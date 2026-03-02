@@ -9,7 +9,7 @@ layout: page
   {% include episode.html
      title="Episode 1 — What is Synthetic Data? And Why Do We Need It?"
      description="In this episode, we discuss the concept of synthetic data: what we mean when we talk about synthetic data, and why do we need it."
-     coming_soon=true
+     video="https://youtu.be/NsefUQ8GL9E"
   %}
 
   {% include episode.html

@@ -19,7 +19,7 @@
   date: "May 2025"
   location: "Online"
   description: "Invited webinar on bias and fairness in medical AI."
-  tags: ["Fairness", "Medical AI", "Webinar"]
+  tags: ["Webinar", "Bias", "Fairness"]
   links:
     - text: "Recording"
       url: "https://aimas.cs.pub.ro/2ndenfieldwebinar/#recording"
@@ -32,7 +32,7 @@
   date: "September 2024"
   location: "Italy"
   description: "Talk and poster at BIAS2024 workshop."
-  tags: ["Workshop", "Fairness", "Synthetic Data"]
+  tags: ["Conference", "Bias", "Fairness"]
   links:
     - text: "Post (LinkedIn)"
       url: "https://www.linkedin.com/feed/update/urn:li:activity:7239284909813456896/"
@@ -56,7 +56,7 @@
   date: "July 2023"
   location: "UK"
   description: "Nominated for research on bias detection & correction in MHRA primary care data."
-  tags: ["Award", "Nomination", "Public Sector"]
+  tags: ["Award", "Bias", "Synthetic Data"]
   links:
     - text: "LinkedIn"
       url: "https://www.linkedin.com/posts/barbaradraghi_aiinmedicine-healthcareinnovation-alliancepsawards-activity-7084069961286991872-KGTn"
@@ -67,7 +67,7 @@
   date: "April 2023"
   location: "Brunel University London, UK"
   description: "Winner of the best presentation award."
-  tags: ["Award", "Presentation"]
+  tags: ["Award", "Conference"]
   links:
     - text: "Slides (coming soon)"
       url: "#"
@@ -78,7 +78,7 @@
   date: "June 2023"
   location: "Portorož, Slovenia"
   description: "Poster presentation at AIME 2023."
-  tags: ["Poster", "Bias", "Healthcare"]
+  tags: ["Conference", "Bias"]
   links:
     - text: "Poster (LinkedIn)"
       url: "https://www.linkedin.com/feed/update/urn:li:activity:7075004805194096640/"
@@ -92,7 +92,7 @@
   date: "2021"
   location: ""
   description: "Workshop presentation (materials to be added)."
-  tags: ["Workshop"]
+  tags: ["Conference"]
   links:
     - text: "Slides (coming soon)"
       url: "#"
