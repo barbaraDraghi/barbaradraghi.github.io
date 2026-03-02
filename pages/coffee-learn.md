@@ -1,7 +1,7 @@
 ---
 title: Coffee & Learn
 permalink: /pages/coffee-learn/
-description: "Topics to learn over a coffee."
+description: "Grab a coffee ☕  and let's talk about synthetic data, bias, and fairness!"
 layout: page
 ---
 
@@ -13,8 +13,8 @@ layout: page
   %}
 
   {% include episode.html
-     title="Episode 2 — What is Bias? And Why Should We Care?"
-     description="Exploring the concept of bias in data and AI systems, and understanding why addressing bias is crucial for fair and trustworthy healthcare applications."
+     title="Episode 2 — How can we generate synthetic data? And why transparency matters?"
+     description="In this episode, we explore different ways to generate synthetic data and explain why transparency matters."
      coming_soon=true
   %}
 </section>
