@@ -17,5 +17,11 @@ layout: page
      description="In this episode, we explore different ways to generate synthetic data and explain why transparency matters."
      video="https://youtu.be/-ju2OpJUkYQ"
   %}
+
+    {% include episode.html
+     title="Episode 3 — What is Bias? And why should we care??"
+     description="In this episode, we talk about bias in real-world and healthcare systems."
+     coming_soon = True
+  %}
 </section>
 
