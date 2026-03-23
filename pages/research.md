@@ -32,6 +32,13 @@ description: "Peer-reviewed research papers and collaborations."
 
 <section class="pub-section">
   <h1 class="page-title">Collaborations</h1>
+  
+  {% include publication.html
+     title="Probabilistic vs Deep Generative Models: A Fairness-Centred Evaluation of Synthetic Healthcare Data"
+     authors="Dima Alattal, <strong>Barbara Draghi</strong>, Puja Myles, et al."
+     journal="International Journal of Computational Intelligence Systems"
+     doi="https://doi.org/10.1007/s44196-026-01173-7"
+  %}
 
   {% include publication.html
      title="High-Fidelity Synthetic Data Applications for Data Augmentation"
@@ -47,10 +54,5 @@ description: "Peer-reviewed research papers and collaborations."
      doi="https://doi.org/10.1007/978-3-031-34344-5_37"
   %}
 
-  {% include publication.html
-     title="Probabilistic vs Deep Generative Models: A Fairness-Centred Evaluation of Synthetic Healthcare Data"
-     authors="Dima Alattal, <strong>Barbara Draghi</strong>, Puja Myles, et al."
-     journal="International Journal of Computational Intelligence Systems"
-     doi="https://doi.org/10.21203/rs.3.rs-7565139/v1"
-  %}
+
 </section>
